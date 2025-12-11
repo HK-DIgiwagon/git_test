@@ -5,3 +5,5 @@ print("login added")
 print("new login feature v2")
 def login():
     pass
+def logout():
+    pass
