@@ -4,11 +4,14 @@ print("New New change 2")
 print("login added")
 print("new login feature")
 print("new login feature v2")
+
+
 def login():
-    print("This is login function")
-    email = input("Enter your email: ")
-    password = input("Enter your password: ")
-    print(f"Logging in with email: {email}")
-    # Add authentication logic here
-    print("Login successful!")
-    
+    user=input("Enter username: ")
+    password=input("Enter password: ")
+    print(f"Logging in {user}...")
+    user=check_credentials(user, password)
+    if user:
+        print("Login successful!")
+    else:
+        print("Login failed. Please check your credentials.")
